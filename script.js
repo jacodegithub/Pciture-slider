@@ -1,5 +1,5 @@
 const panels = document.querySelectorAll('.panel')
-console.log(panels)
+// console.log(panels)
 panels.forEach(panel => {
     panel.addEventListener('click', () => {
         if(panel.classList.contains('active')) {
