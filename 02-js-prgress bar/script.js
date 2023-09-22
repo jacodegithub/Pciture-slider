@@ -3,7 +3,6 @@ const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
-console.log(circles.length)
 let currentActive = 1;
 let prevActive = currentActive;
 
@@ -14,7 +13,7 @@ next.addEventListener('click', () => {
         currentActive = circles.length;
     }
     prevActive = currentActive;
-    console.log(currentActive, prevActive)
+    // console.log(currentActive, prevActive)
     forward()
 })
 
