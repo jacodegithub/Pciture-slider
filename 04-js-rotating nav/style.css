@@ -17,11 +17,15 @@ body {
     width: 100vw;
     min-height: 100vh;
     padding: 4rem;
-
 }
 
 .container.show-nav {
-    transform: translate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.container.show-nav + nav ul {
+    transform: translate(0);
+    transition-delay: .3s;
 }
 
 .circle-container {
@@ -66,4 +70,43 @@ body {
 
 .content img {
     max-width: 100%;
+}
+
+.content {
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+    transform: translateX(-100px);
+    transition: transform .4s ease-in;
+}
+
+nav ul li i {
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
 }
