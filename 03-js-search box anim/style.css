@@ -49,6 +49,6 @@ body {
 }
 
 .search.active .btn {
-    transform: translateX(200px);
+    transform: translateX(198px);
 }
 
