@@ -23,9 +23,14 @@ body {
     transform: rotate(-20deg);
 }
 
-.container.show-nav + nav ul {
+.container.show-nav + nav ul li {
     transform: translate(0);
     transition-delay: .3s;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-90deg);
+    transition: transform .4s ease-out;
 }
 
 .circle-container {
@@ -51,7 +56,7 @@ body {
     border: none;
     font-size: 26px;
     color: #fff;
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .circle button:focus {
