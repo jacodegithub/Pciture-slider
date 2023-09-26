@@ -7,7 +7,7 @@ checkBox();
 function checkBox() {
     const triggerBottom = window.innerHeight / 5 * 4;
     console.log('height', window.innerHeight / 5 * 4)
-    console.log(triggerBottom)
+    // console.log(triggerBottom)
 
     boxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
